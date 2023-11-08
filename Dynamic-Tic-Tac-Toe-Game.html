@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="Dynamic-Tic-Tac-Toe-Game.css">
+    <script src="Dynamic-Tic-Tac-Toe-Game.js" defer></script>
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="winner-box">
+            <h1 class="heading"></h1>
+            <div class="btn">
+                <button class="reset">Restart</button>
+                <button class="exit">Exit</button>
+            </div>
+        </div>
+    </div>
+    <h1>Let's Play Tic-Tac-Toe Game</h1>
+    <div class="game-border">
+        <div class="square">
+            <div class="box" onclick="GameStart(this)"></div>
+            <div class="box" onclick="GameStart(this)"></div>
+            <div class="box box2" onclick="GameStart(this)"></div>
+        </div>
+        <div class="square">
+            <div class="box" onclick="GameStart(this)"></div>
+            <div class="box" onclick="GameStart(this)"></div>
+            <div class="box box2" onclick="GameStart(this)"></div>
+        </div>
+        <div class="square">
+            <div class="box box3" onclick="GameStart(this)"></div>
+            <div class="box box3" onclick="GameStart(this)"></div>
+            <div class="box box2 box3" onclick="GameStart(this)"></div>
+        </div>
+    </div>
+    <div class="game-player">
+        <h2>Players: <span class="Players">Turn of Player X</span></h2>
+    </div>
+    <div class="line line1"></div>
+    <div class="line line2"></div>
+    <div class="line line3"></div>
+    <div class="line line4"></div>
+    <div class="line line5"></div>
+    <div class="line line6"></div>
+    <div class="line line7"></div>
+    <div class="line line8"></div>
+</body>
+
+</html>
