@@ -32,7 +32,9 @@ const computerSystem = () => {
     let randombox = Math.floor(Math.random() * boxes.length);
     if (boxes[randombox].innerHTML === "") {
       boxes[randombox].innerHTML = playerTurn;
+      winnerPlayer();
       playerTurn = playerTurn === currentTurn ? nextTurn : currentTurn;
+      players.innerHTML = `Turn of Player ${playerTurn}`;
     } else {
       computerSystem();
     }
