@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: chocolate;
+}
+
+h1 {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  margin: 0rem 0;
+  font-size: 2rem;
+  font-family: monospace;
+}
+
+.game-border {
+  height: 365px;
+  width: 20%;
+  margin: 2rem auto;
+}
+
+.game-border .box {
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  color: #ccc;
+}
+
+.square {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.square .box {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+.square .box2 {
+  border-right: none;
+}
+
+.square .box3 {
+  border-bottom: none;
+}
+
+.game-player {
+  height: 50px;
+  width: 25%;
+  margin: 2rem auto;
+}
+
+.game-player h2 {
+  height: 50px;
+}
+
+.main-body {
+  height: 100vh;
+  width: 100%;
+  display: none;
+  background-color: rgb(185, 183, 183);
+}
+
+.winner-box {
+  height: 150px;
+  width: 500px;
+  border: 5px solid black;
+}
+
+.winner-box .btn {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.winner-box h1 {
+  margin: 1rem 0;
+}
+
+.winner-box button {
+  height: 100%;
+  width: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: orange;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.line {
+  border: 2px solid red;
+  margin: 1rem 0;
+  width: 20%;
+  display: none;
+  position: absolute;
+}
+
+.line1 {
+  top: 16%;
+  left: 40%;
+}
+
+.line2 {
+  top: 32%;
+  left: 40%;
+}
+
+.line3 {
+  top: 48%;
+  left: 40%;
+}
+
+.line4 {
+  height: 300px;
+  width: 0;
+  top: 12%;
+  left: 43%;
+}
+
+.line5 {
+  height: 300px;
+  width: 0;
+  top: 12%;
+  left: 50%;
+}
+
+.line6 {
+  height: 300px;
+  width: 0;
+  top: 12%;
+  left: 57%;
+}
+
+.line7 {
+  height: 340px;
+  width: 0;
+  transform: rotate(-45deg);
+  top: 9%;
+  left: 50%;
+}
+
+.line8 {
+  height: 340px;
+  width: 0;
+  transform: rotate(45deg);
+  top: 9%;
+  left: 50%;
+}
